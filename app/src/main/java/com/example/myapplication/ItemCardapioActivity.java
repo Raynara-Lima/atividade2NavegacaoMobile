@@ -7,6 +7,7 @@ import com.example.myapplication.transactions.Constants;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -26,6 +27,9 @@ public class ItemCardapioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_item_cardapio);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        ActionBar actionbar = getSupportActionBar();
+
+        actionbar.setTitle("Item Cardápio");
 
         editNome = findViewById( R.id.editNome );
         editPreco = findViewById( R.id.editPreco );
